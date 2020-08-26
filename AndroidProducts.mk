@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/samsung/j7elte
+LOCAL_PATH := device/samsung/j1lte
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_PATH)/lineage_j7elte.mk
+    $(LOCAL_PATH)/lineage_j1lte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_j7elte-user \
-    lineage_j7elte-userdebug \
-    lineage_j7elte-eng
+    lineage_j1lte-user \
+    lineage_j1lte-userdebug \
+    lineage_j1lte-eng
