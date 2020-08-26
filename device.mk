@@ -108,7 +108,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/filter_ie:system/etc/wifi/filter_ie
 
 # Inherit from universal7580-common
-$(call inherit-product, device/samsung/universal7580-common/device-common.mk)
+#$(call inherit-product, device/samsung/universal7580-common/device-common.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/j1lte/j1lte-vendor.mk)
