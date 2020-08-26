@@ -13,46 +13,48 @@
 # limitations under the License.
 
 # Inherit from universal7580-common
-include device/samsung/universal7580-common/BoardConfigCommon.mk
+#include device/samsung/universal7580-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/j7elte
+LOCAL_PATH := device/samsung/j1lte
 
-TARGET_OTA_ASSERT_DEVICE := j7elte
+TARGET_OTA_ASSERT_DEVICE := j1lte
+
+TARGET_ARCH = arm
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_j7elte
+#TARGET_INIT_VENDOR_LIB := libinit_j1lte
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_j7elte_defconfig
+#TARGET_KERNEL_CONFIG := lineageos_j1lte_defconfig
 
 # Network Routing
-TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
+#TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 
 # Partitions
-BOARD_HAS_NO_MISC_PARTITION:= false
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
-BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
-BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
+#BOARD_HAS_NO_MISC_PARTITION:= false
+#TARGET_USERIMAGES_USE_EXT4 := true
+#TARGET_USERIMAGES_USE_F2FS := true
+#BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
+#BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 39845888
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2206203904
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 13035896832
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # RIL
-BOARD_MODEM_TYPE := tss310
-BOARD_PROVIDES_LIBRIL := true
-BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
+#BOARD_MODEM_TYPE := tss310
+#BOARD_PROVIDES_LIBRIL := true
+#BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 
 # Shim
-TARGET_LD_SHIM_LIBS += \
+#TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
     /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so \
     /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
 
 # Legacy BLOB Support
-TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+#TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27

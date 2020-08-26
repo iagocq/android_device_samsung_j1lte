@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/samsung/j7elte
+LOCAL_PATH := device/samsung/j1lte
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
